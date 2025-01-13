@@ -1,0 +1,62 @@
+/* myConstats.css */
+
+.container {
+    max-width: 800px;
+    margin-top: 50px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+  }
+  
+  .list-group-item {
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .list-group-item h5 {
+    font-size: 1.5rem;
+    color: #2980b9;
+  }
+  
+  .list-group-item p {
+    font-size: 1.1rem;
+    color: #34495e;
+  }
+  
+  .list-group-item .status {
+    font-weight: bold;
+    color: #27ae60;
+  }
+  
+  .list-group-item .status.pending {
+    color: #f39c12;
+  }
+  
+  .list-group-item .status.completed {
+    color: #2ecc71;
+  }
+  
+  .list-group-item .status.rejected {
+    color: #e74c3c;
+  }
+  
+  .spinner-border {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .no-constats-message {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #7f8c8d;
+    margin-top: 30px;
+  }
+  

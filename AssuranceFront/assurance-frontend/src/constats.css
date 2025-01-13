@@ -1,0 +1,144 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Container for the constats management */
+.constats-component {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Title styling */
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Styling for the list of constats */
+.assigned-constats ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Styling for individual constat cards */
+.constat-card {
+    width: 100%;
+    max-width: 350px;
+    height: 400px; /* Fixed height for equal-sized cards */
+    background-color: #fdfdfd;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    overflow: hidden; /* Ensures content doesn't overflow the card */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.constat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Client and status text styling */
+.constat-card p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.constat-card h4 {
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #2c3e50;
+    text-align: left;
+}
+
+/* Button styling for "Voir Détails" */
+button {
+    margin: 5px 5px 0 0;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2ecc71;
+    color: white;
+}
+
+/* Dropdown (select) styling for expert assignment */
+.constat-card select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Photo gallery styling */
+.constat-photos {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    overflow: hidden; /* Prevent photos from exceeding container height */
+    max-height: 100px; /* Limits the height of the gallery */
+}
+
+.constat-photo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Error and Loading Messages */
+.error-message,
+.loading-message {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: #e74c3c;
+}
+
+.loading-message {
+    color: #3498db;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .constat-card {
+        max-width: 100%;
+    }
+
+    .assigned-constats ul {
+        gap: 15px;
+    }
+}
